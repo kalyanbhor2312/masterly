@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.Flow
 
 class SkillsRepositoryImpl @Inject constructor(
     private val skillDao: SkillDao
-) : SkillsRepository {git
+) : SkillsRepository {
 
     override fun getSkills(): Flow<List<Skill>> {
         return skillDao.getAllSkills()
